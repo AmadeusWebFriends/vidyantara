@@ -1,0 +1,94 @@
+	<!-- SLIDER REVOLUTION 5.x SCRIPTS  -->
+	<script src="##theme##include/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
+	<script src="##theme##include/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+
+	<script src="##theme##include/rs-plugin/js/extensions/revolution.extension.video.min.js"></script>
+	<script src="##theme##include/rs-plugin/js/extensions/revolution.extension.slideanims.min.js"></script>
+	<script src="##theme##include/rs-plugin/js/extensions/revolution.extension.actions.min.js"></script>
+	<script src="##theme##include/rs-plugin/js/extensions/revolution.extension.layeranimation.min.js"></script>
+	<script src="##theme##include/rs-plugin/js/extensions/revolution.extension.navigation.min.js"></script>
+
+	<script>
+		var tpj=jQuery;
+		var revapi10;
+		tpj(document).ready(function() {
+			if(tpj("#rev_slider_10_1").revolution == undefined){
+				revslider_showDoubleJqueryError("#rev_slider_10_1");
+			}else{
+				revapi10 = tpj("#rev_slider_10_1").show().revolution({
+					sliderType:"standard",
+					jsFileLocation:"##theme##include/rs-plugin/js/",
+					sliderLayout:"fullscreen",
+					dottedOverlay:"none",
+					delay:9000,
+					navigation: {
+						keyboardNavigation:"on",
+						keyboard_direction: "horizontal",
+						mouseScrollNavigation:"off",
+						onHoverStop:"off",
+						touch:{
+							touchenabled:"on",
+							swipe_threshold: 75,
+							swipe_min_touches: 1,
+							swipe_direction: "vertical",
+							drag_block_vertical: false
+						}
+						,
+						bullets: {
+							enable:true,
+							hide_onmobile:false,
+							style:"uranus",
+							hide_onleave:false,
+							direction:"vertical",
+							h_align:"left",
+							v_align:"center",
+							h_offset:30,
+							v_offset:0,
+							space:8,
+							tmp:'<span class="tp-bullet-inner"></span>'
+						},
+						touch:{
+							touchenabled:"off",
+							swipe_treshold : 75,
+							swipe_min_touches : 1,
+							drag_block_vertical:false,
+							swipe_direction:"horizontal"
+						}
+					},
+					responsiveLevels:[1240,1024,778,480],
+					gridwidth:[1140,1024,778,480],
+					gridheight:[800,700,960,720],
+					lazyType:"none",
+					shadow:0,
+					spinner:"off",
+					stopLoop:"on",
+					shuffle:"off",
+					autoHeight:"off",
+					fullScreenAlignForce:"off",
+					fullScreenOffsetContainer: "",
+					fullScreenOffset: "",
+					hideThumbsOnMobile:"off",
+					hideSliderAtLimit:0,
+					hideCaptionAtLimit:0,
+					hideAllCaptionAtLilmit:0,
+					debugMode:false,
+					fallbacks: {
+						simplifyAll:"off",
+						nextSlideOnWindowFocus:"off",
+						disableFocusListener:false,
+					}
+				});
+			}
+
+			revapi10.on("revolution.slide.onloaded",function (e) {
+				setTimeout( function(){ SEMICOLON.Base.sliderDimensions(); }, 200 );
+			});
+
+			revapi10.on("revolution.slide.onchange",function (e,data) {
+				SEMICOLON.Base.sliderMenuClass();
+			});
+
+		});	/*ready*/
+
+	</script>
+
