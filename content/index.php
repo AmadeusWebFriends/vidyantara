@@ -1,6 +1,3 @@
-<!-- Niche Demos -->
-<link rel="stylesheet" href="https://canvastemplate.com/demos/spa/spa.css">
-
 <?php
 
 // *****

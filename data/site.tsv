@@ -5,7 +5,8 @@ safeName	vidyantara
 iconName	VidyAntara
 footer-message	[A message for the footer].
 siteMenuName	VidyAntara
-mediakit	?header=no&theme=no&body=fff&paler=fffafa&footer=aaa&dont-round-logo=1
+mediakit	?header=no&theme=no&body=fff&content=ffe&paler=fffafa&node=B9D3E4&heading=D1EBFC&footer=aaa&dont-round-logo=1
+fonts	cursive=Eagle+Lake
 sections	more, sakhi, impressions
 local-url	http://localhost/friends/vidyantara/
 live-url	https://vidyantara.amadeusweb.site/
