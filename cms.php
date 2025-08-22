@@ -26,12 +26,15 @@ function after_footer_assets() {
 	if (in_array(variable('node'), variable('sliders-on'))) {
 		echo getSnippet('slider-footer');
 	}
+	echo getThemeSnippet('floating-button');
 }
 
 function site_before_render() {
+	runFeature('engage'); //needed for floating button
 	variable('htmlReplaces', [
-		'Vidya' => ' <span class="h5 cursive">Vidya, Founder, Senior "Friend"</span>',
-		'VidyAntara' => /*_iconLink(getLogoOrIcon('icon', 'site')) .*/ ' <span class="h5 cursive">' . variable('iconName') . '</span>',
+		'Vidya' => ' <span class="h5 cursive">Vidya Shankar Chakravarthy</span>',
+		'VidyAntara' => ' <span class="h5 cursive">' . variable('iconName') . '</span>',
+		'REFLECT' => '<span class="h5 cursive">REFLECT</span>',
 		'Vision' => 'To create the best rural home-stay in South India with a spiritual ambience that fosters pluralism.',
 		'Mission' => 'To provide a peaceful and nurturing environment where families bond and integrate their inner and outer selves while cultivating a deeper understanding of their spiritual path and purpose of life.',
 	]);

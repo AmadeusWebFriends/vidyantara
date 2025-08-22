@@ -1,0 +1,17 @@
+#ix	message
+
+|is-table-with-template
+||head-columns: id, message
+||row-template: <tr><td class="text-right">%ix%</td><td>%message%</td></tr>
+
+1	Vegetarian teetotalers retreat centre
+2	Near Zero Plastic campus- please do not add
+3	Detergents and consumables brought from outside must be made of natural ingredients.
+4	We have items made locally (village experience link) with natural ingredients for your use in the campus or purchase if needed.
+5	Maximum of 12 persons can stay at a time in campus.
+6	Water and electricity need to be conserved
+7	Self help holds key as we believe that it brings us closer to nature and purpose of life.
+8	Offers (activities link) quietude and ease of stay paced by each family. 
+9	Pre-booking and payment is necessary. Refunds for cancellation - 90%.
+10	Flora and fauna within the campus to be conserved carefully
+11	Games items and books must be put back in order after use.
