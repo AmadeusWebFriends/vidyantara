@@ -32,8 +32,8 @@ function after_footer_assets() {
 function site_before_render() {
 	runFeature('engage'); //needed for floating button
 	variable('htmlReplaces', [
-		'Vidya' => ' <span class="h5 cursive">Vidya Shankar Chakravarthy</span>',
-		'VidyAntara' => ' <span class="h5 cursive">' . variable('iconName') . '</span>',
+		'Vidya' => '<span class="h5 cursive">Vidya Shankar Chakravarthy</span>',
+		'VidyAntara' => '<span class="h5 cursive">' . variable('iconName') . '</span>',
 		'REFLECT' => '<span class="h5 cursive">REFLECT</span>',
 		'Vision' => 'To create the best rural home-stay in South India with a spiritual ambience that fosters pluralism.',
 		'Mission' => 'To provide a peaceful and nurturing environment where families bond and integrate their inner and outer selves while cultivating a deeper understanding of their spiritual path and purpose of life.',
@@ -43,6 +43,10 @@ function site_before_render() {
 		variable('sub-theme', 'slider-only');
 
 	$node = variable('node');
+
+	if ($node == 'nourishment')
+		variable('skip-container-for-this-page', true);
+
 	//if ($node == 'us') variable('sub-theme', 'modern-blog');
 
 	$section = variable('section');
