@@ -30,7 +30,10 @@ function after_footer_assets() {
 
 function site_before_render() {
 	variable('htmlReplaces', [
+		'Vidya' => ' <span class="h5 cursive">Vidya, Founder, Senior "Friend"</span>',
 		'VidyAntara' => /*_iconLink(getLogoOrIcon('icon', 'site')) .*/ ' <span class="h5 cursive">' . variable('iconName') . '</span>',
+		'Vision' => 'To create the best rural home-stay in South India with a spiritual ambience that fosters pluralism.',
+		'Mission' => 'To provide a peaceful and nurturing environment where families bond and integrate their inner and outer selves while cultivating a deeper understanding of their spiritual path and purpose of life.',
 	]);
 
 	if (hasPageParameter('slider'))
