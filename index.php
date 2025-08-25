@@ -2,6 +2,4 @@
 define('SITEPATH', __DIR__);
 include_once '../../amadeus8/entry.php';
 
-//variables(['network-at' => ALLSITESROOT . '/amadeus8', 'network' => ALLIANCESNETWORK]);
-
 runFrameworkFile('site');

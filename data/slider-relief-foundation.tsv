@@ -1,3 +1,19 @@
 #key	value
+slide1-image	%cdn%relief-foundation/01-vidya.jpg
 slide1-above	<h2 class="h1 cursive">Relief Foundation</h1>
-slide1-heading	Creating Opportunites for Village Folk
+slide1-heading	Real Education for Life In Every Family
+slide1-item1	education
+slide1-item2	dialogue
+slide1-item3	community
+slide1-item4	transformation
+
+slide2-image	%cdn%relief-foundation/02-learning.jpg
+slide2-above	<h2 class="h1 cursive">CMRRC</h1>
+slide2-heading	Rural Montessort Centers
+slide2-item1	Tamil Nadu
+slide2-item2	Andhra Pradesh
+slide2-item3	Kerala
+slide2-item4	Odisha
+
+slide3-image	%cdn%relief-foundation/03-shapes.jpg
+slide3-video	%cdn%spa.webm

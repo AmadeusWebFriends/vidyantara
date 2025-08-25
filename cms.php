@@ -10,11 +10,14 @@ function enrichThemeVars($vars, $what) {
 	if ($what == 'header' && in_array($node, variable('sliders-on'))) {
 		$suffix = $node == 'index' ? '' : '-' . $node;
 		$sheet = getSheet('slider' . $suffix, false);
-		$items = [];
+		$items = $node != 'relief-foundation' ? [] : [
+			'phone' => '12345',
+			'email' => 'relieffoundationindia@gmail.com',
+			'address' => 'Pan India - HQ Chennai',
+		];
 		foreach ($sheet->rows as $row)
 			$items[$row[0]] = $sheet->getValue($row, 'value');
-		$vars['optional-slider'] = replaceItems(getSnippet('spa-slider'), $items, '%');
-
+		$vars['optional-slider'] = replaceHtml(replaceItems(getSnippet('spa-slider'), $items, '%'));
 		includeThemeManager();
 		$vars['optional-page-css'] = CanvasTheme::HeadCssFor('spa', $vars['optional-page-css']);
 	}
@@ -42,28 +45,6 @@ function site_before_render() {
 	if (hasPageParameter('slider'))
 		variable('sub-theme', 'slider-only');
 
-	$node = variable('node');
-
-	if ($node == 'nourishment')
+	if (variable('node') == 'nourishment')
 		variable('skip-container-for-this-page', true);
-
-	//if ($node == 'us') variable('sub-theme', 'modern-blog');
-
-	$section = variable('section');
-	$node = variable('node');
-
-	if (!$section || $section == $node) return;
-
-	$isSpecial = in_array($node, variable('special-nodes'));
-	$nodeFolder = SITEPATH . '/' . variable('section') . '/' . $node;
-	if (!disk_is_dir($nodeFolder)) return; //allows heterogeny
-
-	DEFINE('NODEPATH', $nodeFolder);
-	variables([
-		assetKey(NODEASSETS) => fileUrl('assets/nodes/'),
-		'nodeSiteName' => humanize($node),
-		'nodeSafeName' => $isSpecial ? $section . '-' . $node : 'default',
-		'submenu-at-node' => true,
-		'nodes-have-files' => true,
-	]);
 }

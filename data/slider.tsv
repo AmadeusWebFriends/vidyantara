@@ -1,3 +1,19 @@
 #key	value
+slide1-image	%cdn%photos/vidyantara-01-arial.jpg
 slide1-above	<h2 class="h1 cursive">VidyAntara</h1>
 slide1-heading	Where time stands still
+slide1-item1	in a garden
+slide1-item2	working on fitness
+slide1-item3	in a reflective mood
+slide1-item4	doing a spiritual recharge
+
+slide2-image	%cdn%photos/vidyantara-02-cottage.jpg
+slide2-above	<h2 class="h1 cursive">Spiritual Retreat</h1>
+slide2-heading	Where every dawn is tranquil
+slide2-item1	and nourishing the soul
+slide2-item2	having a unique ethos
+slide2-item3	with a village experience
+slide2-item4	and brings much healing
+
+slide3-image	%cdn%photos/vidyantara-03-walkway.jpg
+slide3-video	%cdn%spa.webm

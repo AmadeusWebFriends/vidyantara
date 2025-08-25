@@ -1,13 +1,23 @@
 #key	value
 name	VidyAntara.org
 byline	Where every dawn is tranquil
+
 safeName	vidyantara
 iconName	VidyAntara
 footer-message	[A message for the footer].
+
 siteMenuName	VidyAntara
+
 mediakit	?content=ffe&paler=fffafa&node=B9D3E4&heading=D1EBFC&footer=aaa&dont-round-logo=1
 fonts	cursive=Eagle+Lake&menu=Quintessential&menu-size=1.3rem
+
 sections	more, sakhi, impressions
+
+phone	54321
+email	contact+any@vidyantara.org
+address	Retreat 1: Elavur, HQ Chennai
+timings	Mon - Fri 9am to 5pm
+
 local-url	http://localhost/friends/vidyantara/
 live-url	https://vidyantara.amadeusweb.site/
 year	2025
