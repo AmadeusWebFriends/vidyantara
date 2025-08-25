@@ -3,9 +3,9 @@
 // *****
 
 $homeVars = [
-	'about-text' => 'SOMETHING HERE',
-	'cta-w-100-link' => '#todo',
-	'cta-w-100' => 'apply for the unique VidyAntara member[friend]ship',
+	'about-text' => replaceHtml('At %VidyAntara%, %Mission%'),
+	'cta-w-100-link' => pageUrl('membership'),
+	'cta-w-100' => 'Join <span class="cursive">VidyAntara</span> as a Member',
 	'suggestions-text' => 'MORE IN THIS SPACE',
 ];
 
