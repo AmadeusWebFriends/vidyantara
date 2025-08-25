@@ -7,6 +7,7 @@ $homeVars = [
 	'cta-w-100-link' => pageUrl('membership'),
 	'cta-w-100' => 'Join <span class="cursive">VidyAntara</span> as a Member',
 	'suggestions-text' => 'MORE IN THIS SPACE',
+	'last-responsive-image' => replaceHtml('%cdn%photos/vidyantara-05-heart.png'),
 ];
 
 // *****

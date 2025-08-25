@@ -1,20 +1,12 @@
 <?php
 variables([
 	'sections-have-files' => true,
-	'special-nodes' => [],
-	'sliders-on' => ['index', 'relief-foundation'],
 ]);
 
 function enrichThemeVars($vars, $what) {
-	$node = variable('node');
-	if ($what == 'header' && in_array($node, variable('sliders-on'))) {
-		$suffix = $node == 'index' ? '' : '-' . $node;
-		$sheet = getSheet('slider' . $suffix, false);
-		$items = $node != 'relief-foundation' ? [] : [
-			'phone' => '12345',
-			'email' => 'relieffoundationindia@gmail.com',
-			'address' => 'Pan India - HQ Chennai',
-		];
+	if ($what == 'header' && nodeIs(SITEHOME)) {
+		$sheet = getSheet('slider', false);
+		$items = [];
 		foreach ($sheet->rows as $row)
 			$items[$row[0]] = $sheet->getValue($row, 'value');
 		$vars['optional-slider'] = replaceHtml(replaceItems(getSnippet('spa-slider'), $items, '%'));
@@ -26,9 +18,9 @@ function enrichThemeVars($vars, $what) {
 }
 
 function after_footer_assets() {
-	if (in_array(variable('node'), variable('sliders-on'))) {
+	if (nodeIs(SITEHOME))
 		echo getSnippet('slider-footer');
-	}
+
 	echo getThemeSnippet('floating-button');
 }
 
