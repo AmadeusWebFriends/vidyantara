@@ -28,10 +28,10 @@ function site_before_render() {
 	runFeature('engage'); //needed for floating button
 	variable('htmlReplaces', [
 		'Vidya' => '<span class="h5 cursive">Vidya Shankar Chakravarthy</span>',
-		'VidyAntara' => $name = '<span class="h5 cursive">' . variable('iconName') . '</span>',
+		'VidyAntara' => '<span class="h5 cursive">' . variable('name') . '</span>',
 		'REFLECT' => '<span class="h5 cursive">REFLECT</span>',
-		'Vision' => 'Our vision is to create the best rural home-stay in South India with a spiritual ambience that fosters pluralism.',
-		'Mission' => 'Our mission is to provide a peaceful and nurturing environment where families bond and integrate their inner and outer selves while cultivating a deeper understanding of their spiritual path and purpose of life.',
+		'Vision' => 'our vision is to create the best rural home-stay in South India with a spiritual ambience that fosters pluralism.',
+		'Mission' => 'our mission is to provide a peaceful and nurturing environment where families bond and integrate their inner and outer selves while cultivating a deeper understanding of their spiritual path and purpose of life.',
 	]);
 
 	if (hasPageParameter('slider'))
