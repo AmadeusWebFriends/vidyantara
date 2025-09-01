@@ -17,7 +17,7 @@ The biggest ongoing activity in a village, away from deadlines and trafficlines 
 
 Introducing %VidyAntara% - a retreat without "facilitators" and "guides", only friends and co-combatants in the glory that can be our tomorrow.
 
-Of course, in our rural setting in a village with farms and fields all around, you can enjoy **Nature Walks** and **Village Visits**.
+Of course, in our rural setting in a village with farms and fields all around, you can enjoy **nature walks** and **village visits**.
 
 ## Bonding
 

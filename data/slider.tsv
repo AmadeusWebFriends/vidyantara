@@ -2,18 +2,18 @@
 slide1-image	%cdn%photos/vidyantara-01-arial.jpg
 slide1-above	<h2 class="h1 cursive">VidyAntara</h2>
 slide1-heading	Where time stands still
-slide1-item1	in a garden
-slide1-item2	working on fitness
-slide1-item3	in a reflective mood
-slide1-item4	spiritually recharging
+slide1-item1	garden smells
+slide1-item2	health swells
+slide1-item3	mood elevates
+slide1-item4	bonds await
 
 slide2-image	%cdn%photos/vidyantara-02-cottage.jpg
-slide2-above	<h2 class="h1 cursive">Where every dawn is tranquil</h2>
-slide2-heading	<!--blank-->
-slide2-item1	nourishment for the soul
-slide2-item2	in a unique ethos
-slide2-item3	a rustic village experience
-slide2-item4	a quenching elixir
+slide2-above	<h2 class="h1 cursive">VidyAntara</h2>
+slide2-heading	Where dawns are tranquil
+slide2-item1	soul filling
+slide2-item2	paced living
+slide2-item3	scenes elate
+slide2-item4	elixirs sate
 
 slide3-image	%cdn%photos/vidyantara-03-walkway.jpg
 slide3-video	%cdn%spa.webm

@@ -1,10 +1,10 @@
 ## What we offer
 
-* Vegetarian Healthy Village Cuisine
-* Simple Rustic Living & Recharging
-* Indoor and Outdoor Games
-* Nature Walks (Self)
-* Access to CURATED DVD Documentaries
-* Libraries for Adults
-* And for Children with Enriching Documentaries
+* vegetarian healthy village cuisine
+* simple rustic living & recharging
+* indoor and outdoor games
+* nature walks (self)
+* access to curated dvd documentaries
+* libraries for adults
+* and for children with enriching documentaries
 * %REFLECT% - for continued eclectic spiritual readings / bhajans and discussion

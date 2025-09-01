@@ -1,7 +1,13 @@
 <?php
 variables([
 	'sections-have-files' => true,
+	'skip-page-menu' => true,
+	'social' => [
+		//[ 'type' => 'linkedin', 'url' => 'https://www.linkedin.com/in/vidya-shankar-1453ab49/', 'name' => 'Vidya' ],
+	],
 ]);
+
+//if (variable('live')) variable('under-construction', true);
 
 function enrichThemeVars($vars, $what) {
 	if ($what == 'header' && nodeIs(SITEHOME)) {
@@ -21,7 +27,7 @@ function after_footer_assets() {
 	if (nodeIs(SITEHOME))
 		echo getSnippet('slider-footer');
 
-	echo getThemeSnippet('floating-button');
+	//echo getThemeSnippet('floating-button');
 }
 
 function site_before_render() {
@@ -30,13 +36,13 @@ function site_before_render() {
 		'Vidya' => '<span class="h5 cursive">Vidya Shankar Chakravarthy</span>',
 		'VidyAntara' => '<span class="h5 cursive">' . variable('name') . '</span>',
 		'REFLECT' => '<span class="h5 cursive">REFLECT</span>',
-		'Vision' => 'our vision is to create the best rural home-stay in South India with a spiritual ambience that fosters pluralism.',
-		'Mission' => 'our mission is to provide a peaceful and nurturing environment where families bond and integrate their inner and outer selves while cultivating a deeper understanding of their spiritual path and purpose of life.',
+		'Vision' => 'we aspire to create the best rural home-stay in South India with a spiritual ambience that fosters pluralism.',
+		'Mission' => 'our aim is to provide a peaceful and nurturing environment where families bond and integrate their inner and outer selves while cultivating a deeper understanding of their spiritual path and purpose of life.',
 	]);
 
 	if (hasPageParameter('slider'))
 		variable('sub-theme', 'slider-only');
 
-	if (variable('node') == 'nourishment')
+	if (variable('node') == 'food')
 		variable('skip-container-for-this-page', true);
 }

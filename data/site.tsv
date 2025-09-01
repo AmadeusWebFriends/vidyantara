@@ -1,23 +1,26 @@
 #key	value
 name	VidyAntara Family Retreat
+owned-by	Relief Foundation
 byline	Where every dawn is tranquil
 
 safeName	vidyantara
 iconName	VidyAntara
-footer-message	[A message for the footer].
+footer-message	Where every dawn is tranquil and where time stands still.
 
 siteMenuName	VidyAntara
 
 mediakit	?content=ffe&paler=fffafa&node=B9D3E4&heading=D1EBFC&footer=aaa&dont-round-logo=1
 fonts	cursive=Eagle+Lake&menu=Quintessential&menu-size=1.3rem
 
-sections	more, sakhi, impressions
+sections	more, sakhi
+_later	impressions
 
-phone	54321
-email	contact+any@vidyantara.org
-address	Retreat 1: Elavur, HQ Chennai
+phone	+91-94446-06456
+whatsapp	919444606456
+email	bookings@vidyantara.org
+address	Narasingapuram Village, Elavur, Gummidipoondi, TN, India
 timings	Mon - Fri 9am to 5pm
 
 local-url	http://localhost/friends/vidyantara/
-live-url	https://vidyantara.amadeusweb.site/
+live-url	https://vidyantara.org/
 year	2025
