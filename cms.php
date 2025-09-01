@@ -1,7 +1,8 @@
 <?php
 variables([
 	'sections-have-files' => true,
-	'skip-page-menu' => true,
+	'no-page-menu' => true,
+	'no-seo-info' => true,
 	'social' => [
 		//[ 'type' => 'linkedin', 'url' => 'https://www.linkedin.com/in/vidya-shankar-1453ab49/', 'name' => 'Vidya' ],
 	],
