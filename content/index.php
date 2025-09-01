@@ -5,7 +5,7 @@
 $homeVars = [
 	'about-text' => replaceHtml('At %VidyAntara%, %Mission%'),
 	'cta-w-100-link' => pageUrl('membership'),
-	'cta-w-100' => 'Join <span class="cursive">VidyAntara</span> as a Member',
+	'cta-w-100' => 'Join <span class="cursive">VidyAntara</span> as a member',
 	'suggestions-text' => 'MORE IN THIS SPACE',
 	'last-responsive-image' => replaceHtml('%cdn%photos/vidyantara-05-heart.jpg'),
 ];
@@ -24,7 +24,7 @@ foreach ($sheet->rows as $item) {
 
 $homeVars['featureHtml'] = implode(NEWLINES2, $items);
 
-// *****
+/*****
 
 $itemTemplate = disk_file_get_contents(SITEPATH . '/data/templates/suggestion.html');
 $sheet = getSheet('suggestions', 'ix');
@@ -40,7 +40,7 @@ foreach ($sheet->group as $ix => $rows) {
 	$homeVars['suggestions-' . $ix] = implode(NEWLINES2, $items);;
 }
 
-// *****
+*****/
 
 $itemTemplate = disk_file_get_contents(SITEPATH . '/data/templates/home.html');
 
