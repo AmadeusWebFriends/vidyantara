@@ -3,14 +3,21 @@ variables([
 	'sections-have-files' => true,
 	'no-page-menu' => true,
 	'no-seo-info' => true,
+	'no-search' => true,
 	'social' => [
 		//[ 'type' => 'linkedin', 'url' => 'https://www.linkedin.com/in/vidya-shankar-1453ab49/', 'name' => 'Vidya' ],
 	],
+	'footer-variation' => 'no-widget',
 ]);
 
 //if (variable('live')) variable('under-construction', true);
 
 function enrichThemeVars($vars, $what) {
+	if ($what == 'header') {
+		$vars['optional-after-menu'] = replaceHtml(getLink('<img src="%site-assets%relief-foundation-icon.png" height="60" />',
+			'https://relieffoundation.in'));
+	}
+
 	if ($what == 'header' && nodeIs(SITEHOME)) {
 		$sheet = getSheet('slider', false);
 		$items = [];
