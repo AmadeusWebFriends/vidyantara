@@ -9,7 +9,7 @@ Imagine a place where the colouring of city-life just washes away  and you feel-
 
 ---
 
-## Accomodation
+## Accommodation
 
 * Simple QuiltMats on floor provided
 * sheets and pillows need to be brought
