@@ -12,12 +12,11 @@ variables([
 
 //if (variable('live')) variable('under-construction', true);
 
-function enrichThemeVars($vars, $what) {
-	if ($what == 'header') {
-		$vars['optional-after-menu'] = replaceHtml(getLink('<img src="%site-assets%relief-foundation-icon.png" height="60" />',
-			'https://relieffoundation.in'));
-	}
+function after_menu() {
+	_headerMenuItem(replaceHtml('<img src="%site-assets%relief-foundation-icon.png" height="40" />'), 'https://relieffoundation.in/', true);
+}
 
+function enrichThemeVars($vars, $what) {
 	if ($what == 'header' && nodeIs(SITEHOME)) {
 		$sheet = getSheet('slider', false);
 		$items = [];
