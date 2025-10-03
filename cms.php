@@ -4,10 +4,12 @@ variables([
 	'no-page-menu' => true,
 	'no-seo-info' => true,
 	'no-search' => true,
+	'salutation' => 'VidyAntara folks',
 	'social' => [
 		//[ 'type' => 'linkedin', 'url' => 'https://www.linkedin.com/in/vidya-shankar-1453ab49/', 'name' => 'Vidya' ],
 	],
 	'footer-variation' => 'no-widget',
+	'quotes-display-count' => 5,
 ]);
 
 //if (variable('live')) variable('under-construction', true);
